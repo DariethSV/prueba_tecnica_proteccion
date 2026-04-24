@@ -58,6 +58,14 @@ Cada ejecución genera o actualiza `log_pipeline.txt` con el detalle de lo que h
 Los niveles usados son `INFO` para el flujo normal y `WARNING` para situaciones inesperadas no fatales (JSON inválido, filas descartadas, log vacío).
 
 ---
+## Tecnologías utilizadas
+La solución fue desarrollada en Python como lenguaje de programación principal para la construcción de todas las funciones del pipeline. Las herramientas específicas usadas son:
+
+**pandas** — para estructurar los registros extraídos en un DataFrame, aplicar la deduplicación, normalizar los tipos de fecha y hora, y generar el conteo de aperturas por módulo.
+**openpyxl** — como motor de escritura para generar el archivo Excel de salida con sus dos hojas (Registros y Resumen).
+**re (expresiones regulares)** — para identificar y extraer las líneas clave del log de casilleros: detectar el evento QUEUE_msg_received y capturar el timestamp de cada registro.
+**logging** — módulo estándar de Python para el monitoreo del pipeline, que persiste cada paso de la ejecución en log_pipeline.txt
+---
 
 ## Replicación
 
