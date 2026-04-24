@@ -1,0 +1,12 @@
+2026-04-24 01:02:06 | INFO     | main | === Inicio del pipeline ===
+2026-04-24 01:02:06 | INFO     | parser | Iniciando lectura del archivo: log_casilleros.txt
+2026-04-24 01:02:06 | INFO     | parser | Lectura completada: 2925 registros únicos extraídos, 0 líneas omitidas.
+2026-04-24 01:02:06 | INFO     | reporter | Iniciando generación del reporte con 2925 registros.
+2026-04-24 01:02:06 | INFO     | transformer | Construyendo DataFrame desde los registros extraídos.
+2026-04-24 01:02:06 | INFO     | transformer | DataFrame listo: 2925 filas.
+2026-04-24 01:02:06 | INFO     | transformer | Generando resumen de aperturas por módulo.
+2026-04-24 01:02:06 | INFO     | transformer | Resumen generado: 2 módulos detectados.
+2026-04-24 01:02:06 | INFO     | reporter | Escribiendo archivo Excel: casilleros_log_estructurado.xlsx
+2026-04-24 01:02:07 | INFO     | reporter | Archivo Excel escrito exitosamente.
+2026-04-24 01:02:07 | INFO     | reporter | Pipeline finalizado exitosamente.
+2026-04-24 01:02:07 | INFO     | main | === Fin del pipeline ===
